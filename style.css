@@ -1,0 +1,359 @@
+
+html, body{
+    height: 100%;
+}
+
+.centered {
+    width: 1170px;    
+    margin: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 150%;
+}
+
+/* -------------------------  Header --------------------------*/
+
+.section-header {    
+    padding-top: 73px;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: black;    
+}
+
+.header-title {       
+    margin-bottom: 44px;
+}
+
+.header-menu {
+    width: 100%;
+    margin-bottom: 47px;
+    margin-left: 1px;
+}
+
+.header-menu-list {
+    margin: 0px;    
+    padding: 0px;  
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style-type: none;    
+}
+
+.header-menu-list a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;        
+    color: inherit;
+}
+
+.header-menu-list a:hover {
+    color: #FF7931;;
+}
+
+
+/* -------------------------  featuring --------------------------*/
+
+.section-featuring {
+    background-image: url("./img/Hotel-11.jpg");
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover; 
+    min-width: 1170px;
+    
+    color: white;
+}
+
+.featuring-content-wrapper {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    
+    text-decoration: none;        
+    color: inherit;
+}
+
+.icon-arch::before{
+    content: "";
+    height: 55px;
+    width: 55px;
+    background-image: url(./img/Group\ 24.svg);
+    margin-bottom: 33px;
+}
+
+.featuring-content { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.featuring-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 134px;
+}
+
+.featuring-subtitle p{
+    width: 455px;
+    line-height: 23px;
+}
+
+/* -------------------------  reviews --------------------------*/
+
+.section-reviews {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: black;
+}
+
+.reviews-title {
+    font-family: 'Roboto', sans-serif;    
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-decoration: none;        
+    color: inherit;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 3px;
+    margin-bottom: 54px;
+    box-sizing: border-box;
+}
+
+.review {
+    width: 370px;
+    text-decoration: none;        
+    color: inherit;
+}
+
+.review-image {
+    margin-bottom: 19px;
+}
+
+.review-title {
+    font-family: 'Playfair Display', serif;    
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.review:hover .review-title {
+    color: #FF7931;
+}
+
+/* -------------------------  Abons  --------------------------*/
+
+.section-abons {
+    color: black;
+    background-color: #F7F7F7;
+    
+    margin-bottom: 51px;
+}
+
+.abons-inner {
+    padding-top: 34px;
+    background: radial-gradient(circle, white 354px, rgba(0,0,0,0) 354px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.abons-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.abon-advantage {
+    margin-top: 24px;
+    width: 370px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.abon-advantage-title {
+    font-family: 'Playfair Display', serif;    
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.abon-advantage-text {
+    height: 63px;
+}
+
+:not(:last-of-type).abon-advantage::after {
+    content: '';
+    width: 100px;
+    height: 1px; 
+    background-color: rgb(0,0,0,0.2);
+}
+
+.abons-button {
+    box-sizing: border-box;
+    width: 170px;
+    height: 46px;
+    background-color: #FF7931;
+    
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 30px;
+    margin-bottom: 36px;
+}
+
+.abons-button__text {    
+    position: relative;
+    top: 1px;
+}
+
+.btn-icon-arrow-right::after{    
+    content: "";
+    height: 25px;
+    width: 24px;
+    margin-left: 10px;
+    background-image: url(./img/\ Arrow\ forward.svg);
+    position: relative;
+    right: 3px;
+    top: 1px;
+}
+
+.abons-promo {
+    margin-bottom: 23px;
+}
+
+/* -------------------------  Footer  --------------------------*/
+
+.section-footer {
+    padding-top: 36px;
+    
+    background-color: #575757;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+
+.footer-title {       
+    margin-bottom: 29px;
+}
+
+.footer-menu {
+    width: 100%;
+    margin-bottom: 45px;    
+}
+
+.footer-menu-list {
+    margin: 0px;    
+    padding: 0px;    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.footer-menu-list a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-menu-list a:hover {
+    color: #FF7931;;
+}
+
+.footer-line {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 42px;
+}
+
+.social-links {
+    width: 169px;
+    height: 47px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0px;    
+    margin: 0px;
+    margin-bottom: 46px;
+    list-style-type: none;        
+}
+
+.social-link {
+    height: 47px;
+    width: 47px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: white;
+}
+
+.social-link:hover {
+    background-color: #FF7931;
+}
